@@ -13,7 +13,14 @@ class Program
     heroi[] herois = new heroi[5];
     static void cadastrarHeroi(ref string nome, ref string poder, ref int pontuacao)
     {
-       heroi nheroi = new heroi with
+        Console.Write("Digite o nome do heroi: ");
+        nome = Console.ReadLine();
+
+        Console.Write("Digite o poder do heroi: ");
+        poder = Console.ReadLine();
+
+        Console.Write("Digite a pontuacao do heroi: ");
+        pontuacao = int.Parse(Console.ReadLine());
     }
 
     
